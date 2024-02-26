@@ -1,0 +1,29 @@
+
+@media print {
+  * {
+    overflow: visible !important;
+  }
+
+  body {
+    position: relative !important;
+    contain: none !important;
+    display: block !important;
+    max-width: unset !important;
+    height: auto !important;
+    max-height: unset !important;
+  }
+
+  app-root,
+  ion-app,
+  ion-router-outlet,
+  ion-content,
+  ion-split-pane,
+  ion-tabs,
+  .ion-page:not(.ion-page-hidden),
+  .tabs-inner {
+    position: relative !important;
+    contain: none !important;
+    display: block !important;
+    height: auto !important;
+  }
+}

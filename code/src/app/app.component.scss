@@ -1,0 +1,6 @@
+@media print {
+  .first-page,
+  .second-page {
+    page-break-after: always;
+  }
+}
