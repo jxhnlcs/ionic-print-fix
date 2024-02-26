@@ -47,8 +47,7 @@ export class PrintService {
 
 O arquivo `global.scss` contém estilos globais para resolver questões de layout ao imprimir.
 
-```bash
-// Estilos globais para impressão
+```css
 
 @media print {
   * {
@@ -82,10 +81,9 @@ O arquivo `global.scss` contém estilos globais para resolver questões de layou
 
 ## Usage
 
-No app.component.ts, adicione o seguinte código no método ngOnInit para inicializar o serviço de impressão.
+No `app.component.ts`, adicione o seguinte código no método ngOnInit para inicializar o serviço de impressão.
 
-```bash
-// app.component.ts
+```typescript
 
 import { PrintService } from 'src/app/services/print.service';
 
@@ -100,7 +98,7 @@ ngOnInit() {
 
 Agora é só você usar o page-break-after/before/inside na page que deseja quebrar páginas e irá funcionar, talvez seja necessário fazer estilizações para ajustar o layout da impressão.
 
-```bash
+```css
 @media print {
 
   .first-page,
